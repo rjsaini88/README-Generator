@@ -19,23 +19,19 @@
 
   ## Usage 
  
-  It is used to create a high quality README for projects
+  User can run this appliation to create a high quality README for thier project by answering questions about thier project.
 
   ## Installation 
   
   N/A
 
-  ## Usage 
-  
-  It is used to create a high quality README for projects
-
   ## License 
   
-  undefined
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Contribution 
   
-  Google and Bootcamp
+  Rj Saini, Google, and Bootcamp
 
   ## Tests 
   
@@ -43,7 +39,7 @@
 
   ## Questions 
   
-  Not at the moment.
+  How can you improve the user experience?
 
   For additional questions, you can reach me at rsaini88@gmail.com
 
