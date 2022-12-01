@@ -5,33 +5,26 @@ const generateMarkdown = require("./Assets/utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
-  //Option if you want to give user the option to name thier README file.
-  //Make sure to enable code in the init function.
-  // {
-  //   type: "input",
-  //   name: "fileName",
-  //   message: "What do you want to name you README file?",
-  // },
-  // {
-  //   type: "input",
-  //   name: "title",
-  //   message: "What is the title of your project?",
-  // },
-  // {
-  //   type: "input",
-  //   name: "description",
-  //   message: "Provide a description of your project",
-  // },
-  // {
-  //   type: "input",
-  //   name: "installation",
-  //   message: "Provide installation instruction",
-  // },
-  // {
-  //   type: "input",
-  //   name: "usage",
-  //   message: "Explain the usage for this project",
-  // },
+  {
+    type: "input",
+    name: "title",
+    message: "What is the title of your project?",
+  },
+  {
+    type: "input",
+    name: "description",
+    message: "Provide a description of your project",
+  },
+  {
+    type: "input",
+    name: "installation",
+    message: "Provide installation instruction",
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "Explain the usage for this project",
+  },
   {
     type: "list",
     name: "license",
@@ -63,31 +56,38 @@ const questions = [
       },
     ],
   },
-  // {
-  //   type: "input",
-  //   name: "contribution",
-  //   message: "Who contributed to this project",
-  // },
-  // {
-  //   type: "input",
-  //   name: "tests",
-  //   message: "How to test this project?",
-  // },
-  // {
-  //   type: "input",
-  //   name: "github",
-  //   message: "What is your Github username?",
-  // },
-  // {
-  //   type: "input",
-  //   name: "email",
-  //   message: "What is your email address?",
-  // },
-  // {
-  //   type: "input",
-  //   name: "questions",
-  //   message: "Do you have any questions?",
-  // },
+  {
+    type: "input",
+    name: "contribution",
+    message: "Who contributed to this project",
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "How to test this project?",
+  },
+  {
+    type: "input",
+    name: "github",
+    message: "What is your Github username?",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "What is your email address?",
+  },
+  {
+    type: "input",
+    name: "questions",
+    message: "Do you have any questions?",
+  },
+    //Option if you want to give user the option to name thier README file.
+  //Make sure to enable code in the init function.
+  {
+    type: "input",
+    name: "fileName",
+    message: "What do you want to name you README file?",
+  },
 ];
 
 // TODO: Create a function to write README file
@@ -101,9 +101,9 @@ function init() {
     const md = generateMarkdown(response);
 
     //Hard coded for the file name to be README.md in code below
-    writeToFile("README.md", md);
+    // writeToFile("README.md", md);
     // Option to name file - code below. Uncomment first object of questions
-    // writeToFile(`${response.fileName}.md`, md);
+    writeToFile(`${response.fileName}.md`, md);
 
     // (err) =>
     //   err
